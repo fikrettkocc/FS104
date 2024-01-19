@@ -40,13 +40,31 @@
                 width: 100%;
             }
         }
+
+        @keyframes blink {
+            0% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .blinking-text {
+            animation: blink 1s infinite;
+        }
     </style>
 </head>
 
 <body>
 
     <div class="container-fluid gallery-container">
-        <h1 class="text-center my-5">2023-2024 YILI GALATASARAY</h1>
+        <h1 class="text-center my-5 blinking-text"><b>2023-2024 YILI GALATASARAY</b></h1>
         <div class="row">
             <div class="col-md-12 gallery-item text-center" data-toggle="modal" data-target="#imageModal"
                 data-target="#imageCarousel" data-slide-to="1">
